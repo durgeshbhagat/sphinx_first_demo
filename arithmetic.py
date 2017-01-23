@@ -35,9 +35,14 @@ def divide(a,b):
     
 def main():
     '''  Call to different arithmetic function eg: add, sub, mult, divide '''
-    
-    
-    pass
+    parser = optparse.OptionParser()
+    parser.add_option("-a", dest="a",type="int", help="First Integer", default=1)
+    parser.add_option("-b", dest="b",type="int", help="Second Integer", default=2)
+    (options, args) = parser.parse_args()
+    #if not (options.filename or options.corpus): parser.error("need corpus filename(-f) or corpus range(-c)")
+    c = add(a,b) 
+    print ' Addition of  %d and %d is  %d ' %(a,b,c)
+    #pass
     
 
 if __def__ == '__main__':
