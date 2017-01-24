@@ -40,10 +40,10 @@ def main():
     parser.add_option("-b", dest="b",type="int", help="Second Integer", default=2)
     (options, args) = parser.parse_args()
     #if not (options.filename or options.corpus): parser.error("need corpus filename(-f) or corpus range(-c)")
-    c = add(a,b) 
-    print ' Addition of  %d and %d is  %d ' %(a,b,c)
+    c = add(options.a,options.b) 
+    print ' Addition of  %d and %d is  %d ' %(options.a,options.b,c)
     #pass
     
 
-if __def__ == '__main__':
+if __name__ == '__main__':
     main() 
