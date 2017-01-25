@@ -1,7 +1,10 @@
 #!usr/bin/python -tt
 
-''' This file provides function for the basic arithmetic operation of two integers '''
+''' This file provides function for the basic arithmetic operation of two integers 
+  - Sphinx Demo containing just bunch of functions
 
+
+'''
 ####------------- Import Module -------
 import os
 import sys
